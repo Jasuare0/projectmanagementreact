@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar.js';
+import Externalcontainer from './Components/Externalcontainer/Externalcontainer.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar
+        // Elementos a pasar mediante props para ser usados en el componente
+        countries = {['Argentina','Bolivia','Haiti','Panamá','Paraguay','Republica Dominincana','Uruguay']}
+      />
+
+      <Externalcontainer/>
+
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.ContainerFilterCountry{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.labelCountry{
+    padding-right: 10px;
+
+}
