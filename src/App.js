@@ -26,6 +26,28 @@ let projectList = [
     initialDate: 'Nov/21',
     LaunchingDate: 'Feb/22'
 
+  },
+  {
+    id: 3,
+    nameProject: 'Project 3',
+    country: 'Brasil',
+    brand: 'Brand 3',
+    status: 'Closed',
+    advance: '100%',
+    initialDate: 'Feb/21',
+    LaunchingDate: 'Feb/21'
+
+  },
+  {
+    id: 4,
+    nameProject: 'Project 4',
+    country: 'Chile',
+    brand: 'Brand 2',
+    status: 'On Hold',
+    advance: '10%',
+    initialDate: 'Feb/21',
+    LaunchingDate: 'Feb/21'
+
   }
 
 ]

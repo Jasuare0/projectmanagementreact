@@ -5,14 +5,14 @@ import Filters from '../Filters/Filters.js';
 
 function Externalcontainer(props) {
 
-    console.log(props.projectData)
-
     return (
 
         <div className="Externalcontainer">
     
             <Filters/>
-            <Projectstable/>
+            <Projectstable 
+                props={props}
+            />
 
         </div>
 

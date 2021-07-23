@@ -1,7 +1,10 @@
 import React from 'react';
 import "./Projectstable.css"
 
-function Projectstable() {
+function Projectstable(props) {
+
+    console.log(props.props.projectData)
+
     return (
 
         <table className="TableProjectList">
@@ -23,70 +26,34 @@ function Projectstable() {
             </thead>
 
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Project 1</td>
-                    <td>Argentina</td>
-                    <td>Pepsi</td>
-                    <td>Open</td>
-                    <td>70%</td>
-                    <td>Oct/21</td>
-                    <td>Oct/21</td>
-                    <td>
-                        <img src="/Images/gantt.jpg" className="imageIconGantt"  alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/finance.jpg" className="imageIconFinance"  alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/team.jpg" className="imageIconTeam"  alt="imageIconGantt" />
-                    </td>
-                    
-                </tr>
+
+                {props.props.projectData.map( (project,index) => {
+                    return(
+
+                        <tr key={index}>
+                            <td>{project.id}</td>
+                            <td>{project.nameProject}</td>
+                            <td>{project.country}</td>
+                            <td>{project.brand}</td>
+                            <td>{project.status}</td>
+                            <td>{project.advance}</td>
+                            <td>{project.initialDate}</td>
+                            <td>{project.LaunchingDate}</td>
+                            <td>
+                                <img src="/Images/gantt.jpg" className="imageIconGantt"  alt="imageIconGantt" />
+                            </td>
+                            <td>
+                                <img src="/Images/finance.jpg" className="imageIconFinance"  alt="imageIconGantt" />
+                            </td>
+                            <td>
+                                <img src="/Images/team.jpg" className="imageIconTeam"  alt="imageIconGantt" />
+                            </td>
+                        
+                        </tr>
 
 
-                <tr>
-                    <td>2</td>
-                    <td>Project 2</td>
-                    <td>Argentina</td>
-                    <td>Pepsi</td>
-                    <td>Open</td>
-                    <td>70%</td>
-                    <td>Oct/21</td>
-                    <td>Oct/21</td>
-                    <td>
-                        <img src="/Images/gantt.jpg" className="imageIconGantt" alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/finance.jpg" className="imageIconFinance"  alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/team.jpg" className="imageIconTeam"  alt="imageIconGantt" />
-                    </td>
-                    
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Project 3</td>
-                    <td>Argentina</td>
-                    <td>Pepsi</td>
-                    <td>Open</td>
-                    <td>70%</td>
-                    <td>Oct/21</td>
-                    <td>Oct/21</td>
-                    <td>
-                        <img src="/Images/gantt.jpg" className="imageIconGantt"  alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/finance.jpg" className="imageIconFinance"  alt="imageIconGantt" />
-                    </td>
-                    <td>
-                        <img src="/Images/team.jpg" className="imageIconTeam"  alt="imageIconGantt" />
-                    </td>
-                    
-                </tr>
-
+                    )
+                })}
 
             </tbody>
 
