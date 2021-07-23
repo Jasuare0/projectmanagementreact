@@ -4,9 +4,9 @@ import './FilterBrand.css'
 function FilterBrand() {
     return (
 
-        <div class="ContainerFilterBrand">
+        <div className="ContainerFilterBrand">
             <label className="labelBrand">Brand</label>
-            <select  class="form-select">
+            <select  className="form-select">
                 <option>All</option>
                 <option>Brand 1</option>
                 <option>Brand 2</option>

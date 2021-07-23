@@ -3,7 +3,10 @@ import Projectstable from '../Projectstable/Projectstable.js';
 import "./Externalcontainer.css"
 import Filters from '../Filters/Filters.js';
 
-function Externalcontainer() {
+function Externalcontainer(props) {
+
+    console.log(props.projectData)
+
     return (
 
         <div className="Externalcontainer">

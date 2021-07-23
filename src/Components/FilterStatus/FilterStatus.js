@@ -6,10 +6,10 @@ function FilterStatus() {
 
         <div className="ContainerStatus">
             <label className="labelStatus">Status</label>
-            <select  class="form-select">
+            <select  className="form-select">
                 <option>All</option>
                 <option>Evaluating</option>
-                <option selected>Open</option>
+                <option>Open</option>
                 <option>Finished</option>
                 <option>On Hold</option>
             </select>

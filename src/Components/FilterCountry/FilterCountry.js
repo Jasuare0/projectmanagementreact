@@ -4,9 +4,9 @@ import './FilterCountry.css'
 function FilterCountry() {
     return (
 
-        <div class="ContainerFilterCountry">
+        <div className="ContainerFilterCountry">
             <label className="labelCountry">Country</label>
-            <select  class="form-select">
+            <select  className="form-select">
                 <option>All</option>
                 <option>Argentina</option>
                 <option>Brasil</option>
