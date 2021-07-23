@@ -3,8 +3,6 @@ import "./Projectstable.css"
 
 function Projectstable(props) {
 
-    console.log(props.props.projectData)
-
     return (
 
         <table className="TableProjectList">

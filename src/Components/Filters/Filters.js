@@ -4,14 +4,20 @@ import FilterBrand from '../FilterBrand/FilterBrand.js';
 import FilterStatus from '../FilterStatus/FilterStatus.js';
 import './Filters.css';
 
-function Filters() {
+function Filters(props) {
     return (
 
         <div className="internalContainerFilters">
 
-            <FilterCountry/>
-            <FilterBrand/>
-            <FilterStatus/>
+            <FilterCountry
+                props={props}
+            />
+            <FilterBrand
+                props={props}
+            />
+            <FilterStatus
+                props={props}
+            />
             <button type="submit" className="btn btn-primary filterButton">Filter</button>
 
         </div>

@@ -1,17 +1,19 @@
 import React from 'react';
 import './FilterStatus.css'
 
-function FilterStatus() {
+function FilterStatus(props) {
     return (
 
         <div className="ContainerStatus">
             <label className="labelStatus">Status</label>
             <select  className="form-select">
                 <option>All</option>
-                <option>Evaluating</option>
-                <option>Open</option>
-                <option>Finished</option>
-                <option>On Hold</option>
+                {props.props.props.statusProject.map((status,item) => {
+                    return (
+                        <option key={item}>{status}</option>
+                    )
+                })}
+
             </select>
 
         </div>

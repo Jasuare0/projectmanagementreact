@@ -9,7 +9,9 @@ function Externalcontainer(props) {
 
         <div className="Externalcontainer">
     
-            <Filters/>
+            <Filters
+                props={props}
+            />
             <Projectstable 
                 props={props}
             />

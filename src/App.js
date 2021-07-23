@@ -4,6 +4,10 @@ import Externalcontainer from './Components/Externalcontainer/Externalcontainer.
 
 function App() {
 
+let countries = ['Argentina','Bolivia','Haiti','Panamá','Paraguay','Republica Dominincana','Uruguay'];
+let brands = ['Brand 1','Brand 2','Brand 3','Brand 4'];
+let statusProject = ['Evaluating','Open','Closed','On Hold','Cancelled'];
+
 let projectList = [
   {
     id: 1,
@@ -58,11 +62,14 @@ let projectList = [
 
       <Navbar
         // Elementos a pasar mediante props para ser usados en el componente
-        countries = {['Argentina','Bolivia','Haiti','Panamá','Paraguay','Republica Dominincana','Uruguay']}
+        countries = {countries}
       />
 
       <Externalcontainer
         projectData= {projectList}
+        countries={countries}
+        brands={brands}
+        statusProject={statusProject}
       
       />
 

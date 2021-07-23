@@ -1,17 +1,19 @@
 import React from 'react';
 import './FilterBrand.css'
 
-function FilterBrand() {
+function FilterBrand(props) {
     return (
 
         <div className="ContainerFilterBrand">
             <label className="labelBrand">Brand</label>
             <select  className="form-select">
                 <option>All</option>
-                <option>Brand 1</option>
-                <option>Brand 2</option>
-                <option>Brand 3</option>
-                <option>Brand 4</option>
+                {props.props.props.brands.map((brand,item) => {
+                    return(
+                        <option>{brand}</option>
+                    )
+                })}
+
             </select>
 
         </div>
